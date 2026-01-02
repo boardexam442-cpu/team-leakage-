@@ -26,6 +26,18 @@
       animation: fadeIn 1s ease-in-out;
     }
 
+    header img {
+      max-width: 150px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+      transition: transform 0.5s ease;
+    }
+
+    header img:hover {
+      transform: rotate(-5deg) scale(1.05);
+    }
+
     h1 {
       font-size: 48px;
       font-weight: bold;
@@ -70,11 +82,13 @@
       margin-left: 20px;
     }
 
+    /* FadeIn animation for sections */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
+    /* Founder Section */
     footer {
       text-align: center;
       margin-top: 50px;
@@ -89,8 +103,9 @@
 </head>
 <body>
 
-  <!-- Header without Logo -->
+  <!-- Header with Logo -->
   <header>
+    <img src="logo.png" alt="Team Leakage Logo">
     <h1>TEAM LEAKAGE</h1>
     <p style="font-size: 20px;">(CLASS 12)</p>
   </header>
@@ -195,6 +210,5 @@
   </footer>
 
 </body>
-        </html>
-  
-  
+  </html>
+      
